@@ -1,8 +1,7 @@
-import {BrowserRouter,Link,Route,Routes} from 'react-router-dom'
+import {BrowserRouter,Route,Routes} from 'react-router-dom'
 
 import Home from './components/pages/Home'
 import NewProject from './components/pages/NewProject'
-import Company from './components/pages/Company'
 import Contact from './components/pages/Contact'
 import Projects from './components/pages/Projects'
 
