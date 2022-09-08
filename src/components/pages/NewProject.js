@@ -4,9 +4,10 @@ import styles from './NewProject.module.css'
 import ProjectForm from '../Projects/ProjectForm';
 
 function NewProject(){
-    const navigate = useNavigate()//Vai permite fazer redirect nas páginas
+  const navigate = useNavigate()//Vai permite fazer redirect nas páginas
 
  function createPost(project){
+
     //Inicializar o cost ao serviço
     project.cost = 0
     project.services = []
@@ -21,7 +22,7 @@ function NewProject(){
       .then((resp) => resp.json())
       .then((data) => {
         console.log(data)
-        navigate('/projects', { message: 'Projeto criado com sucesso!' })
+        navigate("/projects", { message: 'Projeto criado com sucesso!' });
       })
   }
 
